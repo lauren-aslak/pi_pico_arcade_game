@@ -45,6 +45,13 @@ def check():
     global presses
     if button.value() == 0:
         presses = presses + 1
+def all_off():
+    l1.off()
+    l2.off()
+    l3.off()
+    l4.off()
+    l5.off()
+    l6.off()
 
 def stats():
     global wins
@@ -99,6 +106,7 @@ def spin():
                     #hold until button pressed to restart
                     while button.value() == 1:
                         if end_button.value() == 0:
+                            all_off()
                             stats()
                             sys.exit()
                     spinning = False
@@ -111,6 +119,7 @@ def spin():
                     #hold until button pressed to restart
                     while button.value() == 1:
                         if end_button.value() == 0:
+                            all_off()
                             stats()
                             sys.exit()
                     spinning = False
