@@ -141,12 +141,7 @@ def main():
         presses = 0
         spinning = True
         streak = False
-        l1.off()
-        l2.off()
-        l3.off()
-        l4.off()
-        l5.off()
-        l6.off()
+        all_off()
         
         sleep(.25)
         
